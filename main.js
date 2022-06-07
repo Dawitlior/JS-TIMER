@@ -31,7 +31,13 @@ function stopThePrintCounter(){
 
 
 
-var textCounter;
-function printSomeOfTheText(){
 
-}
+    
+    var textCounter;
+    function printSomeOfTheText(){
+       textCounter = setInterval(() => {
+        (anotherP.innerHTML += "i love timers")}, 1000);  
+    }
+function stopThePrints(){
+    clearInterval(textCounter);
+};
